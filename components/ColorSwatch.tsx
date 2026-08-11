@@ -38,11 +38,11 @@ export default function ColorSwatch({
       onClick={handleClick}
       onMouseEnter={onHover}
       onMouseLeave={onHoverEnd}
-      className="bg-white/90 border border-black/10 rounded-2xl overflow-hidden shadow-sm cursor-pointer hover:shadow-md transition-all duration-200 select-none"
+      className="bg-white/90 border border-black/10 rounded-2xl shadow-sm cursor-pointer hover:shadow-md transition-all duration-200 select-none"
     >
       {/* Color block */}
       <div
-        className="w-full h-32 relative"
+        className="w-full h-32 relative overflow-hidden rounded-t-2xl"
         style={{ backgroundColor: color.hex }}
       >
         {isBase && (
