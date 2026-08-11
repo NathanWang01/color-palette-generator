@@ -221,11 +221,13 @@ export default function Home() {
         </div>
 
         {/* Palette type selector */}
-        <div className="mt-6 flex justify-center overflow-x-auto">
-          <PaletteTypeSelector
-            selected={paletteType}
-            onChange={setPaletteType}
-          />
+        <div className="mt-6 overflow-x-auto">
+          <div className="w-fit mx-auto px-6">
+            <PaletteTypeSelector
+              selected={paletteType}
+              onChange={setPaletteType}
+            />
+          </div>
         </div>
 
         {/* Action buttons row */}
